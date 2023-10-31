@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma;
+}
+.product{
+    width: 400px;
+    height: 203px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ebb697;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    position: relative;
+}
+h2::before{
+    content: '';
+    position: absolute;
+    border: 50px solid;
+    border-color: rgb(211, 78, 30) rgb(211, 78, 30) transparent transparent;
+    left: 0;
+    top: 57px;
+    border-width: 16px;
+
+}
+h2{
+    background-color:coral ;
+    padding: 15px;
+    margin: 0 0 20px;
+    color: white;
+    width: calc(100% + 100px);
+    position: relative;
+    left: -50px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    border: 50px solid;
+    border-color:  rgb(211, 78, 30) transparent transparent rgb(211, 78, 30) ;
+    right:0;
+    top: 57px;
+    border-width: 15px;
+
+}
